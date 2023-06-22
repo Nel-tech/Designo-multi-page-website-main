@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400;1,600;1,700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,400;1,500;1,700&family=Kumbh+Sans:wght@300;400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400&family=Oleo+Script:wght@400;700&family=Overpass:wght@300;600&family=Public+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/file.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img src="svg/icon-hamburger.svg" alt="" class="ham-burger" />
+        <div class="logo-div">
+          <a href="index.html">
+            <img src="images/logo/logo-dark.png" alt="" class="img-logo" />
+          </a>
+        </div>
+
+        <div class="nav-list">
+          <a href="About-us.html" class="nav-link">OUR COMPANY</a>
+          <a href="Location.html" class="nav-link">LOCATIONS</a>
+          <a href="Contact-us.html" class="nav-link">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <main>
+        <menu>
+          <div class="cana-location">
+            <div class="first-location">
+              <h4>Canada</h4>
+              <div class="location-addr">
+                <div class="addr-1">
+                  <p class="bold">Designo Central Office</p>
+                  <p>3886 Wellighton Street</p>
+                  <p>Toronto, Ontario M9C 3J5</p>
+                </div>
+
+                <div class="addr-1">
+                  <p class="bold">Contact Us</p>
+                  <p>P : +1 253-863-8967</p>
+                  <p>M : contact@designo.co</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="map" id="Map-Canada"></div>
+          </div>
+
+          <div class="mapCoordinatesAustralia">
+            <div class="map" id="Map-Australia"></div>
+
+            <div class="first-location">
+              <h4>Australia</h4>
+              <div class="location-addr">
+                <div class="addr-1">
+                  <p class="bold">Designo Central Office</p>
+                  <p>19 Balonne Street</p>
+                  <p>New South Wales 2443</p>
+                </div>
+
+                <div class="addr-1">
+                  <p class="bold">Contact Us</p>
+                  <p>P : (02) 6720 9092</p>
+                  <p>M : contact@designo.co</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cana-location">
+            <div class="first-location">
+              <h4>United Kingdom</h4>
+              <div class="location-addr">
+                <div class="addr-1">
+                  <p class="bold">Designo Central Office</p>
+                  <p>13 Colorado Way</p>
+                  <p>Rhyd-y-fro SA8 9GA</p>
+                </div>
+
+                <div class="addr-1">
+                  <p class="bold">Contact Us</p>
+                  <p>P : 078 3115 1400</p>
+                  <p>M : contact@designo.co</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="map" id="map-UK"></div>
+          </div>
+        </menu>
+      </main>
+    </section>
+
+    <footer>
+      <main>
+        <section>
+          <div class="cl">
+            <div class="background-touch">
+              <div class="touch">
+                <h3>Let’s talk about your project</h3>
+
+                <div class="flex">
+                  <p class="p">
+                    Ready to take it to the next level? Contact us today and
+                    find out how our expertise can help your business grow.
+                  </p>
+                  <div class="btn">
+                    <button class="btn-touch">GET IN TOUCH</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="background-footer">
+        <div class="logo-links">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/logo/logo-light.png"
+                alt=""
+                class="footer-logo"
+              />
+            </a>
+          </div>
+          <div class="nav_list">
+            <a href="About-us.html" class="links">OUR COMPANY</a>
+            <a href="Location.html" class="links">LOCATIONS</a>
+            <a href="Contact-us.html" class="links">CONTACT</a>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+
+        <div class="footer-last">
+          <div class="footer-addr">
+            <p class="bold">Designo Central Office</p>
+            <p>3886 Wellighton Street</p>
+            <p>Toronto, Ontario M9C 3J5</p>
+          </div>
+
+          <div class="footer-location">
+            <p>Contact Us(Central Office)</p>
+            <p>P : +1 253-863-8967</p>
+            <p>M : contact@designo.co</p>
+          </div>
+
+          <div class="footer-socials">
+            <a
+              href="https://www.twitter.com/manlike_favour"
+              target="_blank"
+              class="about-link"
+            >
+              <img src="svg/icon-twitter.svg" alt="" class="socials" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/mwlite/in/favour-nelson-a0164523a"
+              target="_blank"
+              class="about-link"
+            >
+              <img src="svg/github.svg" alt="" class="socials" id="git-image" />
+            </a>
+
+            <a
+              href="https://github.com/Lee145"
+              target="_blank"
+              class="about-link"
+            >
+              <img
+                src="svg/linkedin.svg"
+                alt=""
+                class="socials"
+                id="git-image"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="praise">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noopener"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/Lee145" target="_blank" rel="noopener"
+            >FavourLee</a
+          >.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
