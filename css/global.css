@@ -366,6 +366,18 @@ a {
   font-weight: 400;
 }
 
+@media (max-width: 1280px) {
+  .overlay {
+    height: 246px;
+  }
+}
+
+/* @media (max-width: 1024px) {
+  .overlay {
+    height: 246px;
+  }
+} */
+
 @media (max-width: 912px) {
   .big-image {
     width: 100%;
@@ -585,13 +597,13 @@ a {
   .overlay-app {
     position: absolute;
     top: 0px;
-    left: 8.5%;
+    left: 8%;
     width: 84%;
     height: 200px;
   }
   .overlay-graphics {
     position: absolute;
-    left: 8.5%;
+    left: 8%;
     width: 84%;
     height: 200px;
   }
@@ -733,7 +745,13 @@ a {
     transform: translate(-50%, -50%);
     font-family: Jost, sans-serif;
   }
-
+  .overlay {
+    position: absolute;
+    top: 0px;
+    left: 5.2%;
+    width: 90%;
+    height: 200px;
+  }
   .overlay-app {
     position: absolute;
     top: 0px;
@@ -1055,6 +1073,12 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .overlay {
+    position: absolute;
+    left: 6%;
+    width: 88%;
+    height: 250px;
   }
   .overlay-app {
     position: absolute;
