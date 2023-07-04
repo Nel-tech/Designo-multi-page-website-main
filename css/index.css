@@ -8,6 +8,11 @@ body {
   font-family: "Jost", sans-serif;
   text-rendering: optimizeSpeed;
 }
+.body-container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .img-logo {
   width: 150px;
 }
@@ -850,7 +855,8 @@ a {
 
 @media (max-width: 640px) {
   .overlay {
-    width: 69%;
+    width: 78%;
+    left: 11%;
   }
   .overlay-app {
     width: 78%;

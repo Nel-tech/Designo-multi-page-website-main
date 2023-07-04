@@ -944,6 +944,11 @@ a {
     position: relative;
     text-align: center;
   }
+  .overlay {
+    left: 12%;
+    width: 77%;
+    height: 250px;
+  }
   .overlay-app {
     position: absolute;
     left: 12%;
